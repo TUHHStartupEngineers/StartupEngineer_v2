@@ -1,0 +1,76 @@
+project:
+  type: website
+
+website:
+  title: "StartupEngineer"
+  # site-url: https://j0nasw.github.io
+  # repo-url: https://github.com/j0nasw/j0nasw.github.io
+  page-navigation: true
+  reader-mode: true
+  search: true
+  favicon: ./assets/favicon.ico
+
+  twitter-card: true
+
+  open-graph:
+    locale: de_DE
+    site-name: Jonas Wilinski
+
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: index.qmd
+        text: News
+      - href: about.qmd
+        text: About Us
+      - href: index.qmd
+        text: Research
+      - href: index.qmd
+        text: Teaching
+      - href: index.qmd
+        text: Transfer
+      - href: index.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: "{{<var author.github>}}"
+        aria-label: Quarto GitHub
+      - icon: linkedin
+        href: "{{<var author.linkedin>}}"
+        aria-label: Quarto LinkedIn
+      - icon: send-fill
+        href: mailto:jonas@wilinski.me
+        aria-label: Quarto Mail
+      # Icons can be found at https://icons.getbootstrap.com/
+
+  sidebar:
+    style: "floating"
+    search: true
+    contents: auto
+
+  page-footer:
+    left:
+      © {{< var website.c_year >}} by [{{< var author.name >}}]({{< var author.url >}})
+    right:
+      Made with {{< var tech.quarto >}}<br>
+      View the source at [GitHub]({{< var website.github >}})
+    border: false
+    background: dark
+
+format:
+  html:
+    # theme:
+    #   light: styles.scss
+    #   dark: darkly
+    theme: cosmo
+    css: ./css/styles.css
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    author: "TIE"
+    page-layout: full
+
+
+

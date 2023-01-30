@@ -1,0 +1,46 @@
+---
+title: "Startup Engineer"
+pagetitle: "TIE - Institute of Entrepreneurship"
+page-layout: custom
+section-divs: false
+css: css/index.css
+image: https://nbdev.fast.ai/images/card.png
+description: Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
+author: ""
+toc: false
+sidebar: false
+search: false
+reader-mode: false
+---
+
+```{=html}
+<div class="hero-banner overlay">
+    <div class="vertical-center">
+        <!-- <img src="./assets/img/hero_01.jpg" class="card-img-top" alt="..." style="max-height:400px; object-fit: cover"> -->
+        <h3 style="margin-top:50px">Welcome to Hamburg University of Technology</h3>
+        <h1>Institute of Entrepreneurship</h1>
+        <button type="button" class="btn btn-primary btn-lg" style="border-radius: 50px">Get Started</button>
+    </div>
+</div>
+```
+
+## Inaugurated in June 2014 · Headed by Christoph Ihl · Dedicated to three objectives: Research, Teaching, and Transfer
+
+The Institute of Entrepreneurship (TIE) is a research institute at the Hamburg University of Technology (TUHH). It is part of the Faculty of Economics and Management and is located in the heart of Hamburg, Germany. The institute is dedicated to the promotion of entrepreneurship and innovation. It is a place for research, teaching, and practice. The institute is a member of the German Entrepreneurship Research Network (GERN) and the European Academy of Management (EURAM).
+
+```{=html}
+<div class="content-block">
+    <div class="feature">
+        <div class="banner">
+            <h2>Research</h2>
+        </div>
+    </div>
+</div>
+<div class="content-block">
+    <div class="feature">
+        <div class="banner">
+            <h2>Research</h2>
+        </div>
+    </div>
+</div>
+```
