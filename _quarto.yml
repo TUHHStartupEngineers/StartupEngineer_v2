@@ -6,7 +6,7 @@ execute:
 
 website:
   # title: "TUHH Institute of Entrepreneurship"
-  site-url: https://startupengineer.io/
+  site-url: https://tuhhstartupengineers.github.io
   # repo-url: https://github.com/j0nasw/j0nasw.github.io
   page-navigation: true
   reader-mode: false
