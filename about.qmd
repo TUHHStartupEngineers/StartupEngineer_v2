@@ -1,5 +1,16 @@
 ---
 title: "About"
+pagetitle: "TIE - Institute of Entrepreneurship"
+page-layout: full
+section-divs: false
+description: Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
+author: ""
+toc: false
+sidebar: true
+search: false
+reader-mode: false
 ---
 
 About this site
+
+# Hallo

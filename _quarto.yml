@@ -1,14 +1,22 @@
 project:
   type: website
 
+execute:
+  freeze: auto
+
 website:
-  title: "StartupEngineer"
-  # site-url: https://j0nasw.github.io
+  # title: "TUHH Institute of Entrepreneurship"
+  site-url: https://startupengineer.io/
   # repo-url: https://github.com/j0nasw/j0nasw.github.io
   page-navigation: true
-  reader-mode: true
+  reader-mode: false
   search: true
   favicon: ./assets/favicon.ico
+
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
 
   twitter-card: true
 
@@ -18,6 +26,9 @@ website:
 
   navbar:
     pinned: true
+    logo: "assets/logo/logo_tie_white.svg"
+    logo-alt: "TIE Logo"
+    logo-href: index.qmd
     left:
       - href: index.qmd
         text: Home
@@ -61,16 +72,12 @@ website:
 
 format:
   html:
-    # theme:
-    #   light: styles.scss
-    #   dark: darkly
-    theme: cosmo
-    css: ./css/styles.css
+    theme:
+      light:
+        - "themes/tie_dark.scss"
+      dark: "themes/tie_dark.scss"
     toc: true
     toc-depth: 2
     toc-title: Contents
     author: "TIE"
     page-layout: full
-
-
-

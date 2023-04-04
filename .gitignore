@@ -1,2 +1,9 @@
+# Quarto related files
 /.quarto/
 /_site/
+/.luarc.json
+
+# Custom files
+.DS_Store
+
+

@@ -2,45 +2,190 @@
 title: "Startup Engineer"
 pagetitle: "TIE - Institute of Entrepreneurship"
 page-layout: custom
-section-divs: false
-css: css/index.css
-image: https://nbdev.fast.ai/images/card.png
-description: Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
+description: "Write, test, document, and distribute software packages and technical articles — all in one place, your notebook."
+#css: "css/display.css"
+#css: "site_libs/bootstrap/bootstrap.min.css"
 author: ""
 toc: false
 sidebar: false
-search: false
+search: true
 reader-mode: false
+listing:
+  - id: news
+    contents: posts/**/*.qmd
+    type: grid
+    fields: [image, title, subtitle, reading-time, categories, description, author, date]
+    sort: "date desc"
+    #categories: cloud
+    sort-ui: [title, date]
+    filter-ui: true
+    page-size: 3
 ---
-
 ```{=html}
 <div class="hero-banner overlay">
     <div class="vertical-center">
         <!-- <img src="./assets/img/hero_01.jpg" class="card-img-top" alt="..." style="max-height:400px; object-fit: cover"> -->
-        <h3 style="margin-top:50px">Welcome to Hamburg University of Technology</h3>
-        <h1>Institute of Entrepreneurship</h1>
-        <button type="button" class="btn btn-primary btn-lg" style="border-radius: 50px">Get Started</button>
+        <h3 clas="hero-banner h3">Hamburg University of Technology - Institute of Entrepreneurship</h3>
+        <h1 clas="hero-banner h1">Turning Data into Breakthroughs</h1>
+        <!-- <button type="button" class="btn btn-primary btn-lg" style="border-radius: 50px">Get Started</button> -->
+
+        <div class="hero-banner-features">
+            <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end; max-width: 1400px;">
+                <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);">
+                    <img class="img-fluid" src="assets/img/deepmind-4.jpg" />
+                </div>
+                <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);">
+                    <img class="img-fluid" src="assets/img/deepmind-5.jpg" />
+                </div>
+                <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);">
+                    <img class="img-fluid" src="assets/img/deepmind-6.jpg" />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+```
+
+```{=html}
+<div class="introduction" label="#intro">
+    <h1 class="introduction h1">
+        Established in 
+        <span class="text-feature">June 2014</span>
+         and headed by 
+        <span class="text-feature">Prof. Christoph Ihl</span>.
+    </h1>
+    <p class="introduction p">
+        The Institute of Entrepreneurship at Hamburg University of Technology is an academic institution that aims to provide data-driven research in the domains of Entrepreneurship, Entrepreneurial Finance, Venture Capital as well as Green Technologies and AI.
+    </p>
+    <!-- <h2 class="introduction h2">
+        Our Objectives Unlock the Potential of
+        <span style="color: var(--feature-1); font-weight:700">Entrepreneurship</span>
+         and 
+        <span style="color: var(--feature-1); font-weight:700">Data Science</span>.
+    </h2> -->
+</div>
+```
+
+```{=html}
+<div class="objectives" label="#objectives">
+    <span class="objectives_span">Objectives</span>
+    <h2 class="objectives h2">
+        Our Objectives Unlock the Potential of
+        <span style="color: var(--feature-1); font-weight:700">Entrepreneurship</span>
+         and 
+        <span style="color: var(--feature-1); font-weight:700">Data Science</span>
+    </h2>
+
+    <div class="grid gap-4" style="padding-bottom: 80px">
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/research.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Research</h3>
+        <p>We strive to do rigor and relevant research about innovation and entrepreneurship from perspectives of organization theory, sociology and strategy. As data enthusiasts, we love to apply state-of-art computational and econometric methods to novel, large-scale data sets.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
+      </div>
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/teaching.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Teaching</h3>
+        <p>We are convinced that entrepreneurship can be learned and good training increases the odds of entrepreneurial success. To that end, our teaching is problem- and project-based so that students can gain first-hand, real-life experience that inspires and enables them to become the next generation of Startup Engineers.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
+      </div>
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/transfer.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Transfer</h3>
+        <p>We are open to collaborate with corporates, startups and associations to transfer our knowledge about data science and startup engineering into Practice. Possible modes of collaboration are master theses, applied research and data science projects, consulting, talks, workshops or trainings.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
+      </div>
+    </div>
+</div>
+```
+
+```{=html}
+<div class="news" label="#news">
+  <span class="news_span">News</span>
+  <h2 class="news h2">
+      Recent News and Events 
+      <span style="color: var(--feature-1); font-weight:700">@TIE</span>.
+  </h2>
+</div>
+```
+
+
+::: {#news}
+:::
+
+```{=html}
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" style="display:flex">
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-4.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-5.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-6.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 ```
 
 ## Inaugurated in June 2014 · Headed by Christoph Ihl · Dedicated to three objectives: Research, Teaching, and Transfer
 
 The Institute of Entrepreneurship (TIE) is a research institute at the Hamburg University of Technology (TUHH). It is part of the Faculty of Economics and Management and is located in the heart of Hamburg, Germany. The institute is dedicated to the promotion of entrepreneurship and innovation. It is a place for research, teaching, and practice. The institute is a member of the German Entrepreneurship Research Network (GERN) and the European Academy of Management (EURAM).
 
-```{=html}
-<div class="content-block">
-    <div class="feature">
-        <div class="banner">
-            <h2>Research</h2>
-        </div>
-    </div>
-</div>
-<div class="content-block">
-    <div class="feature">
-        <div class="banner">
-            <h2>Research</h2>
-        </div>
-    </div>
-</div>
-```
