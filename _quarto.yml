@@ -11,12 +11,13 @@ website:
   page-navigation: true
   reader-mode: false
   search: true
-  favicon: ./assets/favicon.ico
+  favicon: assets/logo/logo_tie_kompakt.svg
 
   cookie-consent:
-    type: express
-    style: headline
+    type: implied
+    style: simple
     palette: dark
+    policy-url: privacy.qmd
 
   twitter-card: true
 
@@ -47,7 +48,7 @@ website:
       #   href: "{{<var author.github>}}"
       #   aria-label: Quarto GitHub
       - icon: envelope
-        href: mailto:tie@tuhh.de
+        href: mailto:startup.engineer@tuhh.de
         aria-label: Drop us a Mail
       # Icons can be found at https://icons.getbootstrap.com/
 

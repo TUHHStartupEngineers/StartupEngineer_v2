@@ -1,6 +1,8 @@
 # The new StartupEngineer v2 Website
 The all new TUHH Institute of Entrepreneurship website made entirely with Quarto and some Extentions.
 
+[![Quarto Publish](https://github.com/TUHHStartupEngineers/StartupEngineer_v2/actions/workflows/publish.yaml/badge.svg)](https://github.com/TUHHStartupEngineers/StartupEngineer_v2/actions/workflows/publish.yaml)
+
 > **Disclaimer:** This is a work in progress. The website is not yet finished and some pages are still missing.
 
 ## How it was built
