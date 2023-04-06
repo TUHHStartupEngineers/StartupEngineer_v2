@@ -114,78 +114,32 @@ listing:
 :::
 
 ```{=html}
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
+<div class="objectives" label="#affiliations">
+    <span class="objectives_span">Affiliations</span>
+    <h2 class="objectives h2">
+        Our 
+        <span style="color: var(--feature-1); font-weight:700">Partners</span>
+    </h2>
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" style="display:flex">
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-4.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>3d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div class="grid gap-4" style="padding-bottom: 80px">
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/research.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Research</h3>
+        <p>We strive to do rigor and relevant research about innovation and entrepreneurship from perspectives of organization theory, sociology and strategy. As data enthusiasts, we love to apply state-of-art computational and econometric methods to novel, large-scale data sets.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-5.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/teaching.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Teaching</h3>
+        <p>We are convinced that entrepreneurship can be learned and good training increases the odds of entrepreneurial success. To that end, our teaching is problem- and project-based so that students can gain first-hand, real-life experience that inspires and enables them to become the next generation of Startup Engineers.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/img/deepmind-6.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="feature g-col-12 g-col-sm-6 g-col-md-4 d-flex flex-column">
+        <p><img src="assets/icons/transfer.svg" class="img-fluid"></p>
+        <h3 style="margin-top:0px">Transfer</h3>
+        <p>We are open to collaborate with corporates, startups and associations to transfer our knowledge about data science and startup engineering into Practice. Possible modes of collaboration are master theses, applied research and data science projects, consulting, talks, workshops or trainings.</p>
+        <button type="button" class="mt-auto btn btn-primary">Find out more</button>
       </div>
     </div>
-  </div>
+</div>
 ```
-
-## Inaugurated in June 2014 · Headed by Christoph Ihl · Dedicated to three objectives: Research, Teaching, and Transfer
-
-The Institute of Entrepreneurship (TIE) is a research institute at the Hamburg University of Technology (TUHH). It is part of the Faculty of Economics and Management and is located in the heart of Hamburg, Germany. The institute is dedicated to the promotion of entrepreneurship and innovation. It is a place for research, teaching, and practice. The institute is a member of the German Entrepreneurship Research Network (GERN) and the European Academy of Management (EURAM).
-

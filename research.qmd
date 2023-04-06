@@ -1,0 +1,13 @@
+---
+title: "Research"
+pagetitle: "TIE - Research"
+page-layout: full
+section-divs: false
+description: Our research efforts.
+toc: false
+sidebar: false
+search: false
+reader-mode: false
+---
+
+# Research @ TIE

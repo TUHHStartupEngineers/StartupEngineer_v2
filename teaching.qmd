@@ -1,0 +1,13 @@
+---
+title: "Teaching"
+pagetitle: "TIE - Teaching"
+page-layout: full
+section-divs: false
+description: Our teaching efforts.
+toc: false
+sidebar: false
+search: false
+reader-mode: false
+---
+
+# Teaching @ TIE

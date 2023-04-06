@@ -4,13 +4,13 @@ author:
   name: Institute of Entrepreneurship
   email: tie@tuhh.de
   url: about.qmd
-  github: "https://github.com/J0nasW"
-  linkedin: "https://www.linkedin.com/in/jonas-wilinski-a31a35143/"
+  github: "https://github.com/TUHHStartupEngineers"
   profile_pic: "/assets/profile.jpeg"
 
 website:
-  c_year: "2022"
-  github: "https://github.com/J0nasW/j0nasw.github.io"
+  c_year: "2023"
+  github: "https://github.com/TUHHStartupEngineers/StartupEngineer_v2"
+  mail: "mailto:tie@tuhh.de"
 
 tech:
   jupyter: "[Jupyter](https://jupyter.org)"

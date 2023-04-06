@@ -6,11 +6,9 @@ section-divs: false
 description: Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
 author: ""
 toc: false
-sidebar: true
+sidebar: false
 search: false
 reader-mode: false
 ---
 
-About this site
-
-# Hallo
+# About the Institute of Entrepreneurship

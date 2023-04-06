@@ -1,0 +1,26 @@
+---
+title: "News"
+pagetitle: "TIE - News"
+page-layout: full
+description: "Here you can read about our latest news, events and publications."
+toc: false
+sidebar: false
+search: true
+reader-mode: false
+listing:
+  - id: news
+    contents: posts/**/*.qmd
+    type: grid
+    fields: [image, title, subtitle, reading-time, categories, description, author, date]
+    sort: "date desc"
+    #categories: cloud
+    sort-ui: [title, date]
+    filter-ui: true
+    page-size: 3
+---
+
+# Our latest news, events and publications
+
+::: {#news}
+:::
+

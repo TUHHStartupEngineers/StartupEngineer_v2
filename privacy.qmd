@@ -1,0 +1,17 @@
+---
+title: "Data Privacy"
+pagetitle: "TIE - Data Privacy"
+page-layout: full
+section-divs: false
+description: "Data Privacy"
+toc: false
+sidebar: false
+search: false
+reader-mode: false
+---
+
+# Data Privacy
+
+June 28, 2018
+
+We adhere to the [Data Privacy Statement of Hamburg University of Technology](https://www.tuhh.de/tuhh/en/data-privacy)

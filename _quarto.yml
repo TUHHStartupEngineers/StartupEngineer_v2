@@ -32,28 +32,23 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: index.qmd
+      - href: news.qmd
         text: News
-      - href: about.qmd
-        text: About Us
-      - href: index.qmd
+      - href: research.qmd
         text: Research
-      - href: index.qmd
+      - href: teaching.qmd
         text: Teaching
-      - href: index.qmd
+      - href: transfer.qmd
         text: Transfer
-      - href: index.qmd
-        text: Contact
+      - href: about.qmd
+        text: About
     right:
-      - icon: github
-        href: "{{<var author.github>}}"
-        aria-label: Quarto GitHub
-      - icon: linkedin
-        href: "{{<var author.linkedin>}}"
-        aria-label: Quarto LinkedIn
-      - icon: send-fill
-        href: mailto:jonas@wilinski.me
-        aria-label: Quarto Mail
+      # - icon: github
+      #   href: "{{<var author.github>}}"
+      #   aria-label: Quarto GitHub
+      - icon: envelope
+        href: mailto:tie@tuhh.de
+        aria-label: Drop us a Mail
       # Icons can be found at https://icons.getbootstrap.com/
 
   sidebar:
@@ -63,7 +58,8 @@ website:
 
   page-footer:
     left:
-      © {{< var website.c_year >}} by [{{< var author.name >}}]({{< var author.url >}})
+      © {{< var website.c_year >}} by [{{< var author.name >}}]({{< var author.url >}})<br>
+      [Imprint](imprint.qmd) | [Data Privacy](privacy.qmd)
     right:
       Made with {{< var tech.quarto >}}<br>
       View the source at [GitHub]({{< var website.github >}})
