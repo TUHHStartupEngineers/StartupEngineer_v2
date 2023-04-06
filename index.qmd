@@ -2,7 +2,7 @@
 title: "Startup Engineer"
 pagetitle: "TIE - Institute of Entrepreneurship"
 page-layout: custom
-description: "Write, test, document, and distribute software packages and technical articles — all in one place, your notebook."
+description: "We are a research institute at Hamburg University of Technology that aims to provide data-driven research in the domains of Entrepreneurship, Entrepreneurial Finance, Venture Capital as well as Green Technologies and AI."
 #css: "css/display.css"
 #css: "site_libs/bootstrap/bootstrap.min.css"
 author: ""

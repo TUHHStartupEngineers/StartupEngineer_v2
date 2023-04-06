@@ -20,6 +20,7 @@ listing:
 ---
 
 # Our latest news, events and publications
+Here you can read about our latest news, events and publications. You can also subscribe to our newsletter to receive updates about our activities. We try to keep this blog active and interesting, so please let us know if you have any suggestions or comments.
 
 ::: {#news}
 :::

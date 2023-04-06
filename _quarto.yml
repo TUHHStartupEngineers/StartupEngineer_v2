@@ -44,12 +44,24 @@ website:
       - href: about.qmd
         text: About
     right:
-      # - icon: github
-      #   href: "{{<var author.github>}}"
-      #   aria-label: Quarto GitHub
+
       - icon: envelope
         href: mailto:startup.engineer@tuhh.de
         aria-label: Drop us a Mail
+      - icon: github
+        menu:
+          - text: "TIE Profile"
+            url: "{{<var author.github>}}"
+          - text: "Source Code"
+            url: "{{<var website.github>}}"
+          - text: "Report a Bug"
+            url: "{{<var website.github_bug>}}"
+      - icon: box-arrow-in-right
+        menu:
+          - text: "Courses"
+            url: teaching.qmd
+          - text: "Logos & Templates"
+            url: resources.qmd
       # Icons can be found at https://icons.getbootstrap.com/
 
   sidebar:
