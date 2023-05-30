@@ -23,13 +23,19 @@ listing:
 ---
 ```{=html}
 <div class="hero-banner overlay">
-    <div class="vertical-center">
+    <div class="vertical-bottom">
         <!-- <img src="./assets/img/hero_01.jpg" class="card-img-top" alt="..." style="max-height:400px; object-fit: cover"> -->
         <h3 clas="hero-banner h3">Hamburg University of Technology - Institute of Entrepreneurship</h3>
         <h1 clas="hero-banner h1">Turning Data into Breakthroughs</h1>
         <!-- <button type="button" class="btn btn-primary btn-lg" style="border-radius: 50px">Get Started</button> -->
 
-        <div class="hero-banner-features">
+        
+          <!-- <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);">
+            <img class="img-fluid" src="assets/img/scientist.svg" />
+          </div> -->
+        
+
+        <!-- <div class="hero-banner-features">
             <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end; max-width: 1400px;">
                 <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);">
                     <img class="img-fluid" src="assets/img/deepmind-4.jpg" />
@@ -41,7 +47,7 @@ listing:
                     <img class="img-fluid" src="assets/img/deepmind-6.jpg" />
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 ```
@@ -69,7 +75,7 @@ listing:
 ```{=html}
 <div class="objectives" label="#objectives">
     <span class="objectives_span">Objectives</span>
-    <h2 class="objectives h2">
+    <h2 class="objectives-h2">
         Our Objectives Unlock the Potential of
         <span style="color: var(--feature-1); font-weight:700">Entrepreneurship</span>
          and 
@@ -102,7 +108,7 @@ listing:
 ```{=html}
 <div class="news" label="#news">
   <span class="news_span">News</span>
-  <h2 class="news h2">
+  <h2 class="news-h2">
       Recent News and Events 
       <span style="color: var(--feature-1); font-weight:700">@TIE</span>.
   </h2>
@@ -116,31 +122,31 @@ listing:
 ```{=html}
 <div class="objectives" label="#affiliations">
     <span class="objectives_span">Affiliations</span>
-    <h2 class="objectives h2">
+    <h2 class="objectives-h2">
         Our 
         <span style="color: var(--feature-1); font-weight:700">Partners</span>
     </h2>
 
     <div class="container text-center py-5" style="max-width: 100%;">
-        <a href="https://www.tuhh.de/tuhh/startseite" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="https://www.tuhh.de/tuhh/startseite" class="brands">
           <img class="m-3" src="assets/logo/partners/TUHH.svg" style="max-width: 200px;transform: scale(1);" />
         </a>
-        <a href="[#](https://www.mle.hamburg/)" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="[#](https://www.mle.hamburg/)" class="brands">
           <img class="m-3" src="assets/logo/partners/mle.svg" style="max-width: 200px;" href="https://www.tuhh.de/tuhh/startseite"/>
         </a>
-        <a href="http://druid.dk/" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="http://druid.dk/" class="brands">
           <img class="m-3" src="assets/logo/partners/druid.png" style="max-width: 200px;filter: grayscale(100%);" />
         </a>
-        <a href="http://aom.org/" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="http://aom.org/" class="brands">
           <img class="m-3" src="assets/logo/partners/AOM.png" style="max-width: 200px;filter: grayscale(100%);" />
         </a>
-        <a href="http://www.egosnet.org/" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="http://www.egosnet.org/" class="brands">
           <img class="m-3" src="assets/logo/partners/vhbtie.png" style="max-width: 200px;filter: grayscale(100%);" />
         </a>
-        <a href="https://www.the-klu.org/event-pages/oui-conference-2023/" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="https://www.the-klu.org/event-pages/oui-conference-2023/" class="brands">
           <img class="m-3" src="assets/logo/partners/oui.png" style="max-width: 200px;filter: grayscale(100%);" />
         </a>
-        <a href="https://www.vhbonline.org/wk-/-fachgruppen/technologie-innovation-und-entrepreneurship-tie" style="margin-left: 20px; margin-right: 20px; text-decoration: none">
+        <a href="https://www.vhbonline.org/wk-/-fachgruppen/technologie-innovation-und-entrepreneurship-tie" class="brands">
           <img class="m-3" src="assets/logo/partners/egos.png" style="max-width: 180px;filter: grayscale(100%);" />
         </a>
     </div>
@@ -151,7 +157,7 @@ listing:
 ```{=html}
 <div class="news" label="#contact">
   <span class="news_span">Contact</span>
-  <h2 class="news h2">
+  <h2 class="news-h2">
       Reach out to us
   </h2>
 

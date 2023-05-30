@@ -1,67 +1,84 @@
-/*-- TIE Dark Theme --*/
+/*-- TIE Light Theme --*/
 
-$theme: "tie_dark" !default;
+$theme: "tie_light" !default;
+
+/*-- Import Statements --*/
+@import "tie_fonts";
 
 //
 // Color system
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #ebebeb !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #888 !default;
-$gray-700: #444 !default;
-$gray-800: #303030 !default;
-$gray-900: #222 !default;
-$black:    #000 !default;
+$white:           #fff !default;
+$gray-100:        #f8f9fa !default;
+$gray-200:        #ebebeb !default;
+$gray-300:        #dee2e6 !default;
+$gray-400:        #ced4da !default;
+$gray-500:        #adb5bd !default;
+$gray-600:        #888 !default;
+$gray-700:        #444 !default;
+$gray-800:        #303030 !default;
+$gray-900:        #222 !default;
+$black:           #000 !default;
 
-$blue:    #375a7f !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #e74c3c !default;
-$orange:  #fd7e14 !default;
-$yellow:  #f39c12 !default;
-$green:   #00bc8c !default;
-$teal:    #20c997 !default;
-$cyan:    #3498db !default;
+$blue:            #375a7f !default;
+$indigo:          #6610f2 !default;
+$purple:          #6f42c1 !default;
+$pink:            #e83e8c !default;
+$red:             #e74c3c !default;
+$orange:          #fd7e14 !default;
+$yellow:          #f39c12 !default;
+$green:           #00bc8c !default;
+$teal:            #20c997 !default;
+$cyan:            #3498db !default;
 
-$background:    #eeeeee;
-$background-2:  #41454E;
-$foreground:    #fff;
-$foreground-2:  #484d54;
-$feature-1:     #1df5aa;
-$h1-font-color: #009AF1;
-$navbar-color:  #1e2126;
+$tuhh_blue:       #00C1D4 !default;
+$tuhh_purple:     #7200FE !default;
+$tuhh_green:      #5AFFC5 !default;
+$tuhh_yellow:     #FFDE36 !default;
+$tuhh_red:        #FF4F4F !default;
+$tuhh_orange:     #FF7E15 !default;
+$tuhh_pink:       #FFAEA2 !default;
+$tuhh_gray:       #D0D0CE !default;
+$tuhh_brightblue: #143BFF !default;
+$tuhh_brown:      #A8968C !default;
+
+$tie_dblue:       #005e73 !default;
+
+$background:        $white;
+$background-2:      $gray-300;
+$foreground:        $tuhh_blue;
+$foreground-2:      $tuhh_purple;
+$feature-1:         $tie_dblue;
+$h1-font-color:     $tuhh_blue;
+// $navbar-color:      $tuhh_yellow;
 
 // Body
 
-$body-bg:                   $background !default;
-$body-color:                $foreground !default;
+$body-bg:           $background !default;
+$body-color:        $foreground !default;
+
 @function body-mix($weight) {
     @return mix($body-bg, $body-color, $weight);
 }
 
-$primary:       $blue !default;
+$primary:       $tuhh_blue !default;
 $secondary:     body-mix(85%) !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$success:       $tuhh_green !default;
+$info:          $tuhh_brightblue !default;
+$warning:       $tuhh_yellow !default;
+$danger:        $tuhh_red !default;
 // This is inconsistent with Bootstrap semantics. That is, $dark
 // should actually be a light color in a dark mode setting, :shrug:
 // https://github.com/thomaspark/bootswatch/issues/989
-$light:         body-mix(65%) !default;
-$dark:          body-mix(95%) !default;
+// $light:         body-mix(65%) !default;
+// $dark:          body-mix(95%) !default;
 
 $min-contrast-ratio:   1.9 !default;
 
 // Links
 
-$link-color:                $success !default;
+$link-color:          $success !default;
 
 // Fonts
 
@@ -86,10 +103,10 @@ $input-border-color:                $body-bg !default;
 $input-group-addon-color:           body-mix(65%) !default;
 $input-group-addon-bg:              body-mix(85%) !default;
 
-$form-check-input-bg:                     $body-color !default;
-$form-check-input-border:                 none !default;
+$form-check-input-bg:               $body-color !default;
+$form-check-input-border:           none !default;
 
-$form-file-button-color:          $body-color !default;
+$form-file-button-color:            $body-color !default;
 
 // Dropdowns
 
@@ -112,8 +129,8 @@ $nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-colo
 // Navbar
 
 $navbar-padding-y:                  1rem !default;
-$navbar-light-bg:                   $primary !default;
-$navbar-dark-bg:                    $success !default;
+// $navbar-light-bg:                   $white !default;
+// $navbar-dark-bg:                    $white !default;
 
 // Pagination
 
@@ -173,9 +190,9 @@ $breadcrumb-border-radius:          .25rem !default;
 
 // Close
 
-$btn-close-color:            $body-color !default;
-$btn-close-opacity:          .4 !default;
-$btn-close-hover-opacity:    1 !default;
+$btn-close-color:                   $body-color !default;
+$btn-close-opacity:                 .4 !default;
+$btn-close-hover-opacity:           1 !default;
 
 // Code
 
@@ -183,118 +200,7 @@ $pre-color:                         inherit !default;
 
 
 
-/*-- IMPORT FONTS --*/
 
-/* poppins-100 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100;
-    src: url('fonts/poppins-v20-latin-100.eot'); /* IE9 Compat Modes */
-    src: url('fonts/poppins-v20-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/poppins-v20-latin-100.woff') format('woff'), /* Modern Browsers */
-         url('fonts/poppins-v20-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-200 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 200;
-src: url('fonts/poppins-v20-latin-200.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-200.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-300 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-src: url('fonts/poppins-v20-latin-300.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-300.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-regular - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-src: url('fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-italic - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: italic;
-font-weight: 400;
-src: url('fonts/poppins-v20-latin-italic.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-italic.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-500 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-src: url('fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-600 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-src: url('fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-700 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-src: url('fonts/poppins-v20-latin-700.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-700.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-800 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 800;
-src: url('fonts/poppins-v20-latin-800.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-800.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-/* poppins-900 - latin */
-@font-face {
-font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 900;
-src: url('fonts/poppins-v20-latin-900.eot'); /* IE9 Compat Modes */
-src: url('fonts/poppins-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/poppins-v20-latin-900.woff') format('woff'), /* Modern Browsers */
-        url('fonts/poppins-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-}
 
 /*-- scss:rules --*/
 
@@ -307,27 +213,66 @@ src: url('fonts/poppins-v20-latin-900.woff2') format('woff2'), /* Super Modern B
 
 // Media Breakpoints for Responsiveness
 
-@media(min-width: 900px) {
+@media(max-width: 991px) {
+    .navbar-brand {
+      border-right: none !important;
+    }
     .content-block {
       margin-left: 50px;
       margin-right: 50px;
     }
+    .hero-banner h1 {
+        max-width: 80%;
+        // text-align: center;
+        font-size: 2.5rem !important;
+    }
     .hero-banner h3 {
       max-width: 60%;
+      // text-align: center;
+      font-size: 1rem !important;
     }
     .hero-banner-features {
       width: 80%;
+      margin-right: auto;
+      margin-top: -50px !important;
+      height: 90%;
     }
   }
   
-  @media(min-width: 1200px) {
+  @media(max-width: 1200px) {
     .content-block {
       max-width: var(--content-width);
       margin-left: auto;
       margin-right: auto;
     }
+    .hero-banner h1 {
+        max-width: 90%;
+        font-size: 2rem !important;
+    }
     .hero-banner h3 {
       max-width: 90%;
+      font-size: 1rem !important;
+    }
+    .vertical-center {
+      position: relative;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .introduction h1 {
+      font-size: 2rem !important;
+      margin-top: 0px !important;
+      margin-bottom: 20px !important;
+    }
+    .introduction h3 {
+      font-size: 1rem !important;
+    }
+    .introduction p {
+      font-size: 1rem !important;
+    }
+    .text-feature {
+      font-size: 2rem !important;
     }
   }
 
@@ -349,6 +294,24 @@ src: url('fonts/poppins-v20-latin-900.woff2') format('woff2'), /* Super Modern B
   color: $gray-700;
 }
 
+.form-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1*var(--bs-gutter-y));
+  margin-right: calc(-0.5*var(--bs-gutter-x));
+  margin-left: calc(-0.5*var(--bs-gutter-x));
+}
+
+.form-col {
+  padding-right: calc(0.5*var(--bs-gutter-x));
+  padding-left: calc(0.5*var(--bs-gutter-x));
+  flex: 1 0 0%;
+  max-width: 100%;
+}
+
+
 // Navs
 
 #title-block-header {
@@ -356,40 +319,40 @@ src: url('fonts/poppins-v20-latin-900.woff2') format('woff2'), /* Super Modern B
 }
 
 .navbar {
-background: var(--navbar-color);
-text-align: left;
-font-size: 16px;
+    background: $white;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid $tuhh_blue;
+    padding: 0px 0px !important;
 }
 
 .title, .navbar-title {
-font-weight: bold;
-padding: 4px 8px;
-border-radius: 8px;
-margin-right: 4px;
-}
-
-.navbar-title {
-background: linear-gradient(240.01deg, #4B555B 15.29%, rgba(67, 78, 84, 0) 138.75%);
+    font-weight: bold;
+    padding: 4px 4px;
+    border-radius: 8px;
+    margin-right: 4px;
+    background: linear-gradient(240.01deg, #4B555B 15.29%, rgba(67, 78, 84, 0) 138.75%);
 }
 
 .navbar-logo {
-width: 200px;
-height: 50px;
-margin-right: 10px;
-margin-left: 10px;
-margin-top: 10px;
-margin-bottom: 10px;
-max-height: 100%;
-/* border-radius: 8px; */
+    width: 200px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    // margin-top: 5px;
+    // margin-bottom: 5px;
+    max-height: 100%;
+    /* border-radius: 8px; */
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 15px 15px;
     height: 100%;
+    border-right: 1px solid $tuhh_blue;
+    padding-right: 10px;
 }
 
 .navbar-brand -ogo {
@@ -437,7 +400,7 @@ max-height: 100%;
 .overlay {
     position: static;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     left: 0;
     top: 0;
     /* background: rgba(51,51,51,0.7); */
@@ -451,6 +414,19 @@ max-height: 100%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .vertical-bottom {
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   
   .hero-banner {
@@ -460,7 +436,7 @@ max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("assets/img/hero_01.jpg");
+    background-image: url("assets/img/mind.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -474,6 +450,8 @@ max-height: 100%;
     margin-bottom: 40px;
     font-family: 'Poppins';
     color: var(--white);
+    text-align: center;
+    color: $white !important;
   }
   
   .hero-banner h2 {
@@ -481,7 +459,7 @@ max-height: 100%;
     font-size: 40px;
     font-weight: 700;
     font-family: 'Poppins';
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 40px;
   }
   
@@ -496,6 +474,18 @@ max-height: 100%;
     max-width: 100%;
     margin-top: 50px;
     margin-bottom: 10px;
+    text-align: center;
+    color: $tuhh_blue !important;
+  }
+
+  .tuhh-box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $white;
+    border: 1px solid $tuhh_blue;
   }
 
   .hero-banner-features {
@@ -504,10 +494,10 @@ max-height: 100%;
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    height: 100%;
-    margin-top: 10px;
+    height: 70%;
+    margin-top: -100px;
     margin-left: auto;
-    margin-right: auto;
+    // margin-right: auto;
   }
 
   .img-fluid {
@@ -519,7 +509,7 @@ max-height: 100%;
 
 // ##### INTRODUCTION ##### 
 
-.introduction {
+  .introduction {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -528,27 +518,32 @@ max-height: 100%;
   }
 
   .introduction h1 {
-    max-width: 95%;
+    max-width: 90%;
+    text-align: center;
     font-size: 40px;
     font-weight: 500;
     font-family: 'Poppins';
-    margin-top: 10px;
+    margin-top: 120px;
     margin-bottom: 40px;
+    display: inline;
   }
 
   .introduction h2 {
     max-width: 95%;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
+    text-align: center;
     font-family: 'Poppins';
     margin-top: 10px;
     margin-bottom: 40px;
+    display: inline;
   }
 
   .introduction p {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Poppins';
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
     max-width: 70%;
@@ -563,9 +558,103 @@ max-height: 100%;
     color: $feature-1;
     margin-top: 10px;
     margin-bottom: 40px;
+    white-space: nowrap;
+
   }
 
+// ##### OBJECTIVES ##### 
 
+.objectives {
+  margin-top: 150px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background;
+  border-top: 1px solid $tuhh_blue;
+  }
+
+  .objectives_span {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 50px;
+    color: $feature-1;
+  }
+
+  .objectives-h2 {
+    max-width: 95%;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    display: inline;
+  }
+
+  .feature {
+    font-size: 16px;
+    background: $background-2;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    vertical-align: auto;
+  }
+
+  .feature img {
+      margin-bottom: 5px;
+      width: 48px
+  }
+
+  .feature h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+  }
+
+// ####### NEWS #########
+.news {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid $tuhh_blue;
+  }
+
+  .news_span {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 50px;
+    color: $feature-1;
+  }
+
+  .news-h2 {
+    max-width: 95%;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    display: inline;
+  }
+
+  // ####### BRANDS #########
+
+  .brands {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-decoration: none;
+      filter: invert(60%);
+  }
+  
 
 // Indicators
 
@@ -589,4 +678,5 @@ max-height: 100%;
     }
   }
 }
+
 

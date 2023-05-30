@@ -27,7 +27,7 @@ website:
 
   navbar:
     pinned: true
-    logo: "assets/logo/logo_tie_white.svg"
+    logo: "assets/logo/logo_tie.svg"
     logo-alt: "TIE Logo"
     logo-href: index.qmd
     left:
@@ -83,8 +83,9 @@ format:
   html:
     theme:
       light:
+        - "themes/tie_light.scss"
+      dark: 
         - "themes/tie_dark.scss"
-      dark: "themes/tie_dark.scss"
     toc: true
     toc-depth: 2
     toc-title: Contents
