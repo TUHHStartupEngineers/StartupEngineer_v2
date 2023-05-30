@@ -77,7 +77,7 @@ website:
       Made with {{< var tech.quarto >}}<br>
       View the source at [GitHub]({{< var website.github >}})
     border: false
-    background: dark
+    background: light
 
 format:
   html:

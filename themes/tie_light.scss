@@ -51,6 +51,7 @@ $foreground:        $tuhh_blue;
 $foreground-2:      $tuhh_purple;
 $feature-1:         $tie_dblue;
 $h1-font-color:     $tuhh_blue;
+$strokes:           $tuhh_blue;
 // $navbar-color:      $tuhh_yellow;
 
 // Body
@@ -280,7 +281,7 @@ $pre-color:                         inherit !default;
 
 .blockquote {
   &-footer {
-    color: body-mix(75%);
+    color: $white;
   }
 }
 
@@ -322,7 +323,7 @@ $pre-color:                         inherit !default;
     background: $white;
     text-align: left;
     font-size: 16px;
-    border-bottom: 1px solid $tuhh_blue;
+    border-bottom: 1px solid $strokes;
     padding: 0px 0px !important;
 }
 
@@ -351,7 +352,7 @@ $pre-color:                         inherit !default;
     margin-right: 20px;
     padding: 15px 15px;
     height: 100%;
-    border-right: 1px solid $tuhh_blue;
+    border-right: 1px solid $strokes;
     padding-right: 10px;
 }
 
@@ -405,6 +406,7 @@ $pre-color:                         inherit !default;
     top: 0;
     /* background: rgba(51,51,51,0.7); */
     z-index: -10;
+    border-bottom: 1px solid $strokes;
   }
 
   .vertical-center {
@@ -478,16 +480,6 @@ $pre-color:                         inherit !default;
     color: $tuhh_blue !important;
   }
 
-  .tuhh-box {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: $white;
-    border: 1px solid $tuhh_blue;
-  }
-
   .hero-banner-features {
     display: flex;
     flex-direction: row;
@@ -517,7 +509,7 @@ $pre-color:                         inherit !default;
     align-items: center;
   }
 
-  .introduction h1 {
+  .introduction-h1 {
     max-width: 90%;
     text-align: center;
     font-size: 40px;
@@ -528,7 +520,7 @@ $pre-color:                         inherit !default;
     display: inline;
   }
 
-  .introduction h2 {
+  .introduction-h2 {
     max-width: 95%;
     font-size: 28px;
     font-weight: 400;
@@ -539,7 +531,7 @@ $pre-color:                         inherit !default;
     display: inline;
   }
 
-  .introduction p {
+  .introduction-p {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Poppins';
@@ -572,7 +564,7 @@ $pre-color:                         inherit !default;
   flex-direction: column;
   align-items: center;
   background-color: $background;
-  border-top: 1px solid $tuhh_blue;
+  border-top: 1px solid $strokes;
   }
 
   .objectives_span {
@@ -624,7 +616,7 @@ $pre-color:                         inherit !default;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid $tuhh_blue;
+  border-top: 1px solid $strokes;
   }
 
   .news_span {
