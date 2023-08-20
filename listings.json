@@ -1,12 +1,12 @@
 [
   {
-    "listing": "/news.html",
+    "listing": "/index.html",
     "items": [
       "/posts/2022-01-10/index.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/news.html",
     "items": [
       "/posts/2022-01-10/index.html"
     ]
