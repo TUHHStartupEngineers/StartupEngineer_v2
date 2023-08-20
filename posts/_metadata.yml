@@ -2,7 +2,7 @@
 
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: true
+freeze: false
 
 # Enable banner style title blocks
 title-block-banner: true
@@ -13,3 +13,4 @@ author: Christoph Ihl
 # Add table of contents
 toc: true
 sidebar: false
+page-layout: article

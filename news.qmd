@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: ""
 pagetitle: "TIE - News"
 page-layout: full
 description: "Here you can read about our latest news, events and publications."

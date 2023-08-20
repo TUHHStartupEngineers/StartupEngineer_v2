@@ -11,7 +11,7 @@ website:
   c_year: "2023"
   github: "https://github.com/TUHHStartupEngineers/StartupEngineer_v2"
   github_bug: "https://github.com/TUHHStartupEngineers/StartupEngineer_v2/issues/new"
-  mail: "mailto:tie@tuhh.de"
+  mail: "mailto:startup.engineer@tuhh.de"
 
 tech:
   jupyter: "[Jupyter](https://jupyter.org)"

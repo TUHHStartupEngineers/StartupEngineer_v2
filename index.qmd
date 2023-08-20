@@ -1,5 +1,5 @@
 ---
-title: "Startup Engineer"
+title: ""
 pagetitle: "TIE - Institute of Entrepreneurship"
 page-layout: custom
 description: "We are a research institute at Hamburg University of Technology that aims to provide data-driven research in the domains of Entrepreneurship, Entrepreneurial Finance, Venture Capital as well as Green Technologies and AI."
@@ -45,13 +45,13 @@ listing:
 ```
 
 ```{=html}
-<div class="objectives" label="#objectives">
-    <span class="objectives_span">Objectives</span>
-    <h2 class="objectives-h2">
+<div class="section" label="#objectives">
+    <span class="section_span">Objectives</span>
+    <h2 class="section_h2">
         Our Objectives Unlock the Potential of
-        <span style="color: var(--feature-1); font-weight:700">Entrepreneurship</span>
+        <span class="section_span_highlight">Entrepreneurship</span>
          and 
-        <span style="color: var(--feature-1); font-weight:700">Data Science</span>
+        <span class="section_span_highlight">Data Science</span>
     </h2>
 
     <div class="grid gap-4" style="padding-bottom: 80px">
@@ -82,7 +82,7 @@ listing:
   <span class="news_span">News</span>
   <h2 class="news-h2">
       Recent News and Events 
-      <span style="color: var(--feature-1); font-weight:700">@TIE</span>.
+      <span class="section_span_highlight">@TIE</span>.
   </h2>
 </div>
 ```
@@ -92,11 +92,11 @@ listing:
 :::
 
 ```{=html}
-<div class="objectives" label="#affiliations">
-    <span class="objectives_span">Affiliations</span>
-    <h2 class="objectives-h2">
+<div class="section" label="#affiliations">
+    <span class="section_span">Affiliations</span>
+    <h2 class="section_h2">
         Our 
-        <span style="color: var(--feature-1); font-weight:700">Partners</span>
+        <span class="section_span_highlight">Partners</span>
     </h2>
 
     <div class="container text-center py-5" style="max-width: 100%;">
@@ -127,9 +127,9 @@ listing:
 
 
 ```{=html}
-<div class="news" label="#contact">
-  <span class="news_span">Contact</span>
-  <h2 class="news-h2">
+<div class="section" label="#contact">
+  <span class="section_span">Contact</span>
+  <h2 class="section_h2">
       Reach out to us
   </h2>
 
@@ -152,28 +152,28 @@ listing:
           <img src="assets/icons/phone.svg" style="max-width: 50px; margin-right: 10px" class="img-fluid">
           <div class="px-2">
               <h6 class="fw-bold mb-0">Phone</h6>
-              <a href="tel:004940428784765" class="mb-0">+49 40 42878-4765</a>
+              <a href="tel:004940428784765" class="mb-0 section_span_highlight">+49 40 42878-4765</a>
           </div>
       </div>
       <div class="d-flex align-items-center p-3 flex-fill">
           <img src="assets/icons/mail.svg" style="max-width: 50px; margin-right: 10px" class="img-fluid">
           <div class="px-2">
               <h6 class="fw-bold mb-0">E-Mail</h6>
-              <a href="mailto:startup.engineer@tuhh.de" class="mb-0">startup.engineer@tuhh.de</a>
+              <a href="mailto:startup.engineer@tuhh.de" class="mb-0 section_span_highlight">startup.engineer@tuhh.de</a>
           </div>
       </div>
       <div class="d-flex align-items-center p-3 flex-fill">
           <img src="assets/icons/compass.svg" style="max-width: 50px; margin-right: 10px" class="img-fluid">
           <div class="px-2">
               <h6 class="fw-bold mb-0">Appointments</h6>
-              <p>You can book an appointment via <a href="https://www.tuhh.de/tuhh/startseite">our online calendar</a> or <a href="mailto:startup.engineer@tuhh.de">mail</a>.</p>
+              <p>You can book an appointment via <a href="https://www.tuhh.de/tuhh/startseite" class="section_span_highlight">our online calendar</a> or <a href="mailto:startup.engineer@tuhh.de" class="section_span_highlight">mail</a>.</p>
           </div>
       </div>
       <div class="d-flex align-items-center p-3 flex-fill">
           <img src="assets/icons/compass.svg" style="max-width: 50px; margin-right: 10px" class="img-fluid">
           <div class="px-2">
               <h6 class="fw-bold mb-0">Location</h6>
-              <a href="" class="mb-0">Am Irrgarten 5-7</br>21073 Hamburg</a>
+              <a href="" class="mb-0 section_span_highlight">Am Irrgarten 5-7</br>21073 Hamburg</a>
           </div>
       </div>
     </div>

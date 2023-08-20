@@ -8,7 +8,7 @@ website:
   # title: "TUHH Institute of Entrepreneurship"
   site-url: https://tuhhstartupengineers.github.io
   # repo-url: https://github.com/j0nasw/j0nasw.github.io
-  page-navigation: true
+  page-navigation: false
   reader-mode: false
   search: true
   favicon: assets/logo/logo_tie_kompakt.svg
@@ -17,13 +17,13 @@ website:
     type: implied
     style: simple
     palette: dark
-    policy-url: privacy.qmd
+    policy-url: /privacy.qmd
 
   twitter-card: true
 
   open-graph:
     locale: de_DE
-    site-name: Jonas Wilinski
+    site-name: TUHH Institute of Entrepreneurship
 
   navbar:
     pinned: true
@@ -46,7 +46,7 @@ website:
     right:
 
       - icon: envelope
-        href: mailto:startup.engineer@tuhh.de
+        href: "{{<var website.mail>}}"
         aria-label: Drop us a Mail
       - icon: github
         menu:
@@ -72,7 +72,7 @@ website:
   page-footer:
     left:
       © {{< var website.c_year >}} by [{{< var author.name >}}]({{< var author.url >}})<br>
-      [Imprint](imprint.qmd) | [Data Privacy](privacy.qmd)
+      [Imprint](/imprint.qmd) | [Data Privacy](/privacy.qmd)
     right:
       Made with {{< var tech.quarto >}}<br>
       View the source at [GitHub]({{< var website.github >}})
